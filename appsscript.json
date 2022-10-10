@@ -1,0 +1,13 @@
+{
+  "timeZone": "Asia/Jakarta",
+  "dataStudio": {
+    "name": "BSI Promag",
+    "logoUrl": "https://bsi.uii.ac.id/wp-content/uploads/2018/03/Logo-BSI-UII.png",
+    "company": "Badan Sistem Informasi - UII",
+    "companyUrl": "https://bsi.uii.ac.id/",
+    "addonUrl": "https://github.com/diansigit/bsi-pm-data-studio-rest-api-connector",
+    "supportUrl": "https://github.com/diansigit/bsi-pm-data-studio-rest-api-connector/issues",
+    "description": "BSI UII project management data source",
+    "sources": ["github.com/diansigit"]
+  }
+}
