@@ -89,6 +89,36 @@ function getFields(request) {
     .setId('year')
     .setType(types.TEXT);
 
+  fields
+    .newDimension()
+    .setId('notes')
+    .setType(types.TEXT);
+
+  fields
+    .newDimension()
+    .setId('date_of_to_do')
+    .setType(types.YEAR_MONTH_DAY);
+
+  fields
+    .newDimension()
+    .setId('date_of_in_progress')
+    .setType(types.YEAR_MONTH_DAY);
+
+  fields
+    .newDimension()
+    .setId('date_of_done')
+    .setType(types.YEAR_MONTH_DAY);
+
+  fields
+    .newDimension()
+    .setId('date_of_postpone')
+    .setType(types.YEAR_MONTH_DAY);
+
+  fields
+    .newDimension()
+    .setId('date_of_cancel')
+    .setType(types.YEAR_MONTH_DAY);
+
   return fields;
 }
 
@@ -151,6 +181,18 @@ function responseToRows(requestedFields, response) {
           return row.push(innitiative.quarter);
         case 'year':
           return row.push(innitiative.year);
+        case 'notes':
+          return row.push(innitiative.notes);
+        case 'date_of_to_do':
+          return row.push(innitiative.date_of_to_do);
+        case 'date_of_in_progress':
+          return row.push(innitiative.date_of_in_progress);
+        case 'date_of_done':
+          return row.push(innitiative.date_of_done);
+        case 'date_of_postpone':
+          return row.push(innitiative.date_of_postpone);
+        case 'date_of_cancel':
+          return row.push(innitiative.date_of_cancel);
         default:
           return row.push('');
       }
